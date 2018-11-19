@@ -1,78 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thakurgaon</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="mdl/material.min.css">
-  <link rel="stylesheet" href="mdl/googlefonts.css">
-  <script src="mdl/jquery.min.js"></script>
-  <script src="mdl/material.min.js"></script>
-  <style type="text/css">
-    .backgrey {
-      background: lightgrey;
-      padding: 10px;
-    }
-  </style>
+   <title>Thakurgaon</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="mdl/material.min.css">
+   <link rel="stylesheet" href="mdl/googlefonts.css">
+   <link rel="stylesheet" href="mdl/stylesheet.css">
+   <script src="mdl/jquery.min.js"></script>
+   <script src="mdl/material.min.js"></script>
 </head>
+
 <body>
   <!-- Always shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Two</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                    mdl-textfield--floating-label mdl-textfield--align-right">
-          <label class="mdl-button mdl-js-button mdl-button--icon"
-                 for="fixed-header-drawer-exp">
-            <i class="material-icons">search</i>
-          </label>
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" name="sample"
-                   id="fixed-header-drawer-exp">
-          </div>
-        </div>
+      <div class="mdl-layout__header-row" id="navbarheader">
+        <!-- nav header is generated from partials/html file -->
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html">One</a>
-        <a class="mdl-navigation__link" href="two.html">Two</a>
-        <a class="mdl-navigation__link" href="three.html">Three</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+      <span class="mdl-layout navbardrawer" id="navbardrawer">
+        <!-- nav drawer is generated from partials/html file -->
+      </span>
+      <nav class="mdl-navigation" id="navbarlinks">
+        <!-- nav links are generated from partials/html file -->
       </nav>
     </div>
+    
+
     <main class="mdl-layout__content" >
       <div class="page-content">
-
-        <div class="mdl-grid">
-          <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
-            <div class="mdl-card__media"><img src="Rifat.jpg" width="157" height="157" border="0"
-             alt="" style="padding:10px;">
-            </div>
-            <div class="mdl-card__supporting-text">
-              Auckland Sky Tower, taken March 24th, 2014
-            </div>
-            <div class="mdl-card__supporting-text">
-            The Sky Tower is an observation and telecommunications tower located in Auckland,
-            New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-            in the Southern Hemisphere.
-            </div>
-          </div>
-        </div>
         
+        <div class="mdl-grid">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--12-col">
+            এক নজরে ঠাকুরগাঁও
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            Button
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            Button
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            Button
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            Button
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            Button
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+            Button
+          </button>
+        </div>
       </div>
     </main>
   </div>
 
   <script type="text/javascript" language="JavaScript">
-   
+      $('#navbarheader').load('partials/nav-header.html');
+      $('#navbardrawer').load('partials/nav-drawer.html');
+      $('#navbarlinks').load('partials/nav-links.html');
+      
+      setTimeout(function(){
+        $('#headercustomtitle').text('দ্বিতীয় পাতা');
+      }, 1000);
+      
   </script>
 
 </body>

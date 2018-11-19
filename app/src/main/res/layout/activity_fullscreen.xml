@@ -19,17 +19,24 @@
         android:layout_y="147dp"
         android:id="@+id/coordinator_layout">
 
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView" >
+            </WebView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
         <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/webView" >
-
+            android:id="@+id/splashView">
         </WebView>
-
-        <WebView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/splashView" />
 
     </android.support.design.widget.CoordinatorLayout>
 

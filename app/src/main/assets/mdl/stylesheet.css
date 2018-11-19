@@ -1,0 +1,57 @@
+
+.navbardrawer {
+  height: 125px;
+  background: url('../images/drawer-background.jpg') center / cover;
+
+}
+.draweritems > img {
+  -webkit-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px 5px 2px rgba(0,0,0,0.5);
+}
+.draweritemtitle {
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 1px 1px 3px #000;
+}
+.draweritemsubtitle {
+  color: #fff !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+.backgrey {
+  background: lightgrey;
+  padding: 10px;
+}
+.boxbutton80 {
+  height: 80px;
+}
+.boxbutton100 {
+  height: 100px;
+}
+.centered-text {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.tiny {
+  font-size: 1rem;
+}
+.small {
+  font-size: 2.5rem; 
+}
+.medium {
+  font-size: 4rem; 
+}
+.large {
+  font-size: 6rem;
+}
+.left20 {
+  margin-left: 20px;
+}
+.right20 {
+  margin-right: 20px;
+}
+.align-icon {
+  margin-top: -5px;
+}

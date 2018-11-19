@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+     <title>Thakurgaon</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="mdl/material.min.css">
+     <link rel="stylesheet" href="mdl/googlefonts.css">
+     <link rel="stylesheet" href="mdl/stylesheet.css">
+     <script src="mdl/jquery.min.js"></script>
+     <script src="mdl/material.min.js"></script>
+  </head>
+</head>
+<body id="body">
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row" id="navbarheader">
+        <!-- nav header is generated from partials/html file -->
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout navbardrawer" id="navbardrawer">
+        <!-- nav drawer is generated from partials/html file -->
+      </span>
+      <nav class="mdl-navigation" id="navbarlinks">
+        <!-- nav links are generated from partials/html file -->
+      </nav>
+    </div>
+    
+
+    <main class="mdl-layout__content" >
+      <div class="page-content">
+
+      </div>
+    </main>
+  </div>
+
+  <script type="text/javascript" language="JavaScript">
+      $('#navbarheader').load('partials/nav-header.html');
+      $('#navbardrawer').load('partials/nav-drawer.html');
+      $('#navbarlinks').load('partials/nav-links.html');
+      setTimeout(function(){
+        $('#headercustomtitle').text('Text');
+      }, 1000);
+  </script>
+
+</body>
+</html>

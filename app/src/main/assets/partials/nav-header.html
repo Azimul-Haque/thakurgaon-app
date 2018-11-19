@@ -1,0 +1,48 @@
+<!-- Title -->
+<span class="mdl-layout-title" id="headercustomtitle">Loading...</span>
+<!-- Add spacer, to align navigation to the right -->
+<div class="mdl-layout-spacer"></div>
+<!-- Navigation. We do not hide it in small screens. -->
+<!-- <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+  <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+    <i class="material-icons">search</i>
+  </label>
+  <div class="mdl-textfield__expandable-holder">
+    <input class="mdl-textfield__input" type="text" id="search">
+    <label class="mdl-textfield__label" for="search">Enter your query...</label>
+  </div>
+</div> -->
+
+<div id="floatingmenudiv">
+  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+    <i class="material-icons">more_vert</i>
+  </button>
+  <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+    <li class="mdl-menu__item mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">info_outline</i>
+        অ্যাপটি সম্পর্কে
+      </span>
+    </li>
+    <li class="mdl-menu__item mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">call</i>
+        যোগাযোগ
+      </span>
+    </li>
+    <li class="mdl-menu__item mdl-list__item">
+      <span class="mdl-list__item-primary-content">
+        <i class="material-icons mdl-list__item-icon">code</i>
+        নির্মাতা
+      </span>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" language="JavaScript">
+  $('#hdrbtn').click(function () {
+    setTimeout(function(){
+      componentHandler.upgradeDom();
+    }, 500);
+  });
+</script>

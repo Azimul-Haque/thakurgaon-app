@@ -1,94 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thakurgaon</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="mdl/material.min.css">
-  <link rel="stylesheet" href="mdl/googlefonts.css">
-  <script src="mdl/jquery.min.js"></script>
-  <script src="mdl/material.min.js"></script>
-  <style type="text/css">
-    .backgrey {
-      background: lightgrey;
-      padding: 10px;
-    }
-  </style>
+  <head>
+     <title>Thakurgaon</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="mdl/material.min.css">
+     <link rel="stylesheet" href="mdl/pace.min.css">
+     <link rel="stylesheet" href="mdl/googlefonts.css">
+     <link rel="stylesheet" href="mdl/stylesheet.css">
+     <script src="mdl/jquery.min.js"></script>
+     <script src="mdl/material.min.js"></script>
+     <script src="mdl/pace.min.js"></script>
+  </head>
 </head>
-<body>
+<body id="body">
   <!-- Always shows a header, even in smaller screens. -->
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Home</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation. We hide it in small screens. -->
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                    mdl-textfield--floating-label mdl-textfield--align-right">
-          <label class="mdl-button mdl-js-button mdl-button--icon"
-                 for="fixed-header-drawer-exp">
-            <i class="material-icons">search</i>
-          </label>
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" name="sample"
-                   id="fixed-header-drawer-exp">
-          </div>
-        </div>
+      <div class="mdl-layout__header-row" id="navbarheader">
+        <!-- nav header is generated from partials/html file -->
       </div>
     </header>
     <div class="mdl-layout__drawer">
-      <span class="mdl-layout" style="background: #999; height: 120px;">
-        <ul class="demo-list-two mdl-list">
-          <li class="mdl-list__item mdl-list__item--two-line">
-            <span class="mdl-list__item-primary-content">
-              <img src="Rifat.jpg" class="mdl-list__item-avatar">
-              <span style="color: #fff;">ঠাকুরগাঁও</span>
-              <span class="mdl-list__item-sub-title"><small>v 1.0.0</small></span>
-            </span>
-          </li>
-        </ul>
+      <span class="mdl-layout navbardrawer" id="navbardrawer">
+        <!-- nav drawer is generated from partials/html file -->
       </span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html">One</a>
-        <a class="mdl-navigation__link" href="two.html">Two</a>
-        <a class="mdl-navigation__link" href="three.html">Three</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href=""><small>v 1.0.1</small></a>
+      <nav class="mdl-navigation" id="navbarlinks">
+        <!-- nav links are generated from partials/html file -->
       </nav>
     </div>
+    
+
     <main class="mdl-layout__content" >
       <div class="page-content">
         
         <div class="mdl-grid">
-          <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone">
-            <div class="mdl-card__media"><img src="Rifat.jpg" width="157" height="157" border="0"
-             alt="" style="padding:10px;">
-            </div>
-            <div class="mdl-card__supporting-text">
-              Auckland Sky Tower, taken March 24th, 2014
-            </div>
-            <div class="mdl-card__supporting-text">
-            The Sky Tower is an observation and telecommunications tower located in Auckland,
-            New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-            in the Southern Hemisphere.
-            </div>
-          </div>
+          <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--12-col boxbutton80" href="two.html">
+            <h4 class="centered-text"><i class="small material-icons">lightbulb_outline</i> এক নজরে ঠাকুরগাঁও</h4>
+          </a>
+          <a href="#!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone boxbutton100" style="background: #2196f3; ">
+            <h6><i class="material-icons">beach_access</i><br/>জেলা সম্পর্কিত তথ্য</h6>
+          </a>
+          <a href="#!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone boxbutton100" style="background: #cddc39;">
+            <h6><i class="material-icons">cloud_off</i><br/>সদর উপজেলা</h6>
+          </a>
+          <a href="#!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone boxbutton100" style="background: #4caf50;">
+            <h6><i class="material-icons">terrain</i><br/>পীরগঞ্জ উপজেলা</h6>
+          </a>
+          <a href="#!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone boxbutton100" style="background: #f44336;">
+            <h6><i class="material-icons">wb_sunny</i><br/>রানীশংকৈল উপজেলা</h6>
+          </a>
+          <a href="#!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone boxbutton100" style="background: #26a69a;">
+            <h6><i class="material-icons">filter_vintage</i><br/>হরিপুর উপজেলা</h6>
+          </a>
+          <a href="#!" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-cell--2-col-phone boxbutton100" style="background: #ff9800;">
+            <h6><i class="material-icons">time_to_leave</i><br/>বালিয়াডাঙ্গী উপজেলা</h6>
+          </a>
         </div>
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone backgrey">4</div>
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone backgrey">4</div>
-          <div class="mdl-cell mdl-cell--4-col mdl-cell--6-col-phone backgrey">4</div>
-        </div>
-
+        
       </div>
     </main>
   </div>
 
   <script type="text/javascript" language="JavaScript">
-   
+    $('#navbarheader').load('partials/nav-header.html');
+    $('#navbardrawer').load('partials/nav-drawer.html');
+    $('#navbarlinks').load('partials/nav-links.html');
+    setTimeout(function(){
+      $('#headercustomtitle').text('ঠাকুরগাঁও তথ্য বাতায়ন');
+    }, 1000);
+    Pace.restart();
   </script>
 
 </body>

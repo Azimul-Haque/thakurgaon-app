@@ -67,6 +67,23 @@ public class FullscreenActivity extends AppCompatActivity {
         view.getSettings().setDomStorageEnabled(true);
         view.getSettings().setAllowFileAccessFromFileURLs(true);
         view.getSettings().setAllowUniversalAccessFromFileURLs(true);
+        view.getSettings().setAllowFileAccess(true);
+        view.getSettings().setAllowContentAccess(true);
+
+        // reload code
+        final SwipeRefreshLayout swipeLayout = (SwipeRefreshLayout) findViewById(R.id.swipeToRefresh);
+        swipeLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                view.reload();
+                view.setWebViewClient(new WebViewClient() {
+                    @Override
+                    public void onPageFinished(WebView view, String url) {
+                        swipeLayout.setRefreshing(false);
+                    }
+                });
+            }
+        });
     }
 
     protected void showAppExitDialog(){
